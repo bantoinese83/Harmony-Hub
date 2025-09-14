@@ -1,0 +1,623 @@
+---
+description:prd
+globs:
+alwaysApply: true
+---
+Harmony Hub: Social Concert & Music Rating
+App
+1. Introduction
+Summary
+Harmony Hub is a social mobile application designed for music lovers and concert-goers. It provides a
+dedicated platform for users to log, rate, and review the concerts they attend, maintain a personal diary of
+their live music experiences, read reviews from other enthusiasts, and engage with a vibrant community
+based on shared musical interests. The app aims to be intuitive and engaging, fostering a rich
+environment for discovering and sharing live music.
+Problem Statement
+Music enthusiasts and concert-goers currently lack a centralized, dedicated platform to systematically
+track their concert attendance, articulate their experiences, discover new shows based on community
+input, and connect with others who share their passion for live music. This leads to fragmented personal
+notes, forgotten concert details, missed opportunities for social engagement, and difficulty finding
+credible, community-driven reviews.
+Solution
+Harmony Hub offers an intuitive cross-platform mobile application where users can effortlessly log
+concerts, assign star ratings, write detailed text reviews, explore a comprehensive database of artists,
+venues, and upcoming events, and engage with a vibrant community by sharing their experiences,
+following friends, and discovering new events. It centralizes all aspects of the live music experience from
+personal journaling to social discovery.
+Target Audience
+The primary user base includes avid concert-goers, frequent festival attendees, and general music
+enthusiasts who regularly attend live shows. It also targets individuals seeking a community to discuss,
+rate, and share their live music experiences, as well as those looking to discover new artists, venues, and
+events through trusted peer reviews and recommendations.
+2. User Personas
+Liam, The Avid Concert-Goer - Frequent concert attendee who values documenting every
+Goals
+• Log every concert attended with date, venue, artists, and personal notes.
+• Assign detailed ratings to performances and overall experience.
+• Maintain a chronological, digital diary of all live music experiences.
+• Quickly discover upcoming shows for favorite artists and explore new events.
+Frustrations
+• Forgetting specific details or dates of past concerts.
+• No centralized, easy-to-use platform for tracking all shows.
+• Difficulty finding reliable, fan-generated reviews before attending a concert.
+• Missing out on shows due to fragmented information across various platforms.
+Chloe, The Social Music Enthusiast - Loves discussing music and concerts, seeks recomm
+Goals
+• Read authentic concert reviews from like-minded individuals.
+• Share her own detailed concert thoughts and experiences with a community.
+• Connect with friends and other users who share similar music tastes.
+• Discover new artists, genres, and venues through community recommendations and activity.
+Frustrations
+• Limited social features or dedicated communities on existing music apps.
+• Difficulty finding trustworthy and relevant concert reviews.
+• Feeling isolated in niche music tastes without a platform for discussion.
+• Lack of a personal activity feed to see what friends are attending or reviewing.
+Maya, The Explorer - New to the live music scene, actively looking for popular events and
+Goals
+• Easily search for artists, venues, and upcoming events.
+• View aggregate ratings and popular reviews to inform her choices.
+• Get inspired by trending concerts and curated lists.
+• Understand the vibe and audience of different venues through community input.
+Frustrations
+• Overwhelmed by the sheer number of concert options without clear guidance.
+• Unreliable or unhelpful online reviews that don't capture the live experience.
+• Difficulty navigating fragmented information sources for event discovery.
+• Not knowing where to start when planning to attend a live show.
+3. Features
+User Profile Management
+A personalized section allowing users to create, manage, and view their public profile, including personal
+details, a summary of their activity, logged concerts, and written reviews. This serves as a central hub for
+individual user content and social presence.
+User Stories
+• As a new user, I want to create a personalized profile, so that I can establish my identity within the
+Harmony Hub community.
+• As a user, I want to edit my profile information (e.g., display name, bio, profile picture), so that it
+accurately reflects my current interests and personality.
+• As a user, I want to view my past concert logs and written reviews, so that I can easily reminisce
+about my experiences and track my activity.
+• As a user, I want to see my follower count and who I am following, so that I can manage my social
+connections and gauge my community reach.
+Acceptance Criteria
+• Users can register and create a unique profile with a display name and optional bio.
+• Users can upload and update a profile picture.
+• The profile page displays a summary of user activity, including total concerts logged and average
+rating.
+• The profile page lists all concerts logged and reviews written by the user, ordered chronologically.
+• Users can view their list of followers and users they are following, with options to navigate to their
+profiles.
+Concert Logging & Rating System
+Enables users to meticulously record details of concerts they have attended, assign a subjective star
+rating, and add personal notes to create a comprehensive digital diary of their live music journey.
+User Stories
+• As a concert-goer, I want to easily log a concert I attended, so that I can keep a detailed record of
+my live music experiences.
+• As a concert-goer, I want to rate a concert on a 1-5 star scale, so that I can quickly convey my
+overall satisfaction.
+• As a concert-goer, I want to add essential details like the main artist(s), venue, date, and personal
+notes to my log, so that my memories are comprehensively captured.
+• As a user, I want to view my entire history of logged concerts, so that I can look back at my favorite
+shows and track my attendance over time.
+Acceptance Criteria
+• Users can initiate the logging process from a dedicated 'Log Concert' button.
+• Users can search for existing artists and venues; if not found, they can manually enter new ones.
+• The logging form includes mandatory fields for main artist(s), venue, and date.
+• Users can assign a star rating (1-5) to each logged concert.
+• Users can add optional text notes to their concert log.
+• Successfully logged concerts are added to the user's profile and displayed in chronological order.
+Review & Comment System
+A robust system for users to write and publish detailed text reviews for concerts, read reviews from
+others, and engage in discussions through commenting and 'liking' functionality, fostering community
+interaction around shared experiences.
+User Stories
+• As a user, I want to write a detailed text review for a concert I've logged, so that I can share my
+in-depth thoughts and insights beyond a simple rating.
+• As a user, I want to read other music lovers' reviews for a specific concert, so that I can gain diverse
+perspectives and decide whether to attend or reminisce.
+• As a user, I want to comment on existing reviews, so that I can engage in discussions, ask
+questions, or provide additional context.
+• As a user, I want to 'like' reviews and comments, so that I can show appreciation for helpful or
+well-written content and signal its value to others.
+Acceptance Criteria
+• Users can submit a text review (with defined character limits) for any concert they have logged.
+• Each review is displayed on the respective concert's detail page, showing the reviewer's name,
+rating, review text, and submission date.
+• Users can view all reviews for a specific concert, typically sorted by recency or popularity.
+• Users can post comments on any existing review, with comments displayed chronologically beneath
+the review.
+• Users can 'like' a review or a comment, and the like count is visibly updated in real-time.
+• Reviews display the associated star rating given by the user for that concert.
+Explore & Search Functionality
+Provides powerful search capabilities to find artists, venues, and concerts, alongside an 'Explore' feed
+that highlights trending events, popular artists, and curated content to aid in discovery.
+User Stories
+• As a user, I want to search for specific artists, venues, or concert events, so that I can quickly find
+relevant information and plan my attendance.
+• As a user, I want to discover trending concerts and popular artists/venues, so that I can stay updated
+on the most talked-about events and experiences.
+• As a user, I want to view upcoming shows for my favorite artists, so that I never miss an opportunity
+to see them live.
+• As a user, I want to access detailed profiles for artists and venues, including their past performances
+and aggregate ratings, so that I can learn more about them.
+Acceptance Criteria
+• A prominent search bar is available on the 'Explore' screen.
+• Search results return relevant artists, venues, and concerts based on keywords.
+• Tapping on a search result navigates to the respective Artist Profile, Venue Profile, or Concert Detail
+page.
+• An 'Explore' section displays dynamically updated content such as 'Trending Concerts' (e.g., most
+logged/reviewed recently) and 'Popular Artists/Venues' (e.g., highest aggregate ratings).
+• Artist profiles display their name, genre, image, and a list of their upcoming and past concerts.
+• Venue profiles display their name, location, address, and a list of upcoming and past concerts held
+there.
+Social Sharing & Interaction
+Enables users to build a social graph by following other users, view a personalized activity feed of their
+connections, and share their concert experiences within the app's community and potentially to external
+social media platforms.
+User Stories
+• As a user, I want to follow other users, so that I can see their concert activities and reviews in my
+personalized feed.
+• As a user, I want to view a chronological feed of activity from the users I follow, so that I can stay
+updated on their live music experiences.
+• As a user, I want to share my logged concerts or reviews to my in-app feed, so that my followers can
+see and react to my experiences.
+• As a user, I want to easily share links to concerts or reviews to external social media platforms (e.g.,
+Twitter, Instagram), so that I can spread the word beyond Harmony Hub.
+Acceptance Criteria
+• Users can follow and unfollow other users from their profile pages or activity feed.
+• A dedicated 'Feed' tab displays a stream of new concert logs and reviews from users the current
+user follows.
+• Each item in the feed clearly attributes the activity to the user who performed it.
+• Users can share a link to any concert detail page or review page via the device's native share sheet.
+• The follower/following count is displayed on user profiles and updates in real-time.
+4. Technical Requirements
+Frontend: React Native, Expo
+Backend: Firebase Functions, Firestore, Firebase Authentication, Firebase Storage
+Database: Firestore (NoSQL document database) for scalability and real-time updates.
+Key APIs: Ticketmaster API (for concert event listings, schedules, and venue details)., MusicBrainz API /
+Spotify API (for artist metadata, discographies, and supplementary information)., Google Places API (for
+detailed venue information, maps, and location-based searches).
+Hosting Environment: Google Cloud Platform (GCP) for all Firebase services, ensuring reliable and
+scalable hosting.
+5. Key Performance Indicators (KPIs)
+Monthly Active Users (MAU)
+Description: The total number of unique users who open and interact with the Harmony Hub app at least
+once within a 30-day period.
+Target: Achieve 10,000 MAU within 6 months of the initial public launch.
+Concert Log Rate
+Description: The percentage of active users who successfully log at least one concert per week,
+indicating engagement with the core functionality.
+Target: Maintain a weekly concert log rate of over 25% among active users.
+Review Engagement Rate
+Description: The average number of interactions (likes and comments) received per review posted on the
+platform, measuring community interaction with user-generated content.
+Target: Achieve an average of 3 interactions (likes/comments) per review posted.
+User Retention (D30)
+Description: The percentage of new users acquired in a given period who return to use the app at least
+once 30 days after their initial sign-up date, indicating long-term user stickiness.
+Target: Achieve a D30 user retention rate of 35%.
+6. Release Plan
+MVP (Minimum Viable Product)
+Launch with core features to validate the product concept, gather initial user feedback, and establish a
+foundational community around concert logging and basic social interaction.
+Features Included
+• User Profile Management (basic creation, viewing, editing)
+• Concert Logging & Rating System (add, view, rate concerts)
+• Review & Comment System (post reviews, view reviews, basic comment functionality, like reviews)
+• Explore & Search Functionality (basic search for artists/venues/concerts, simple explore feed)
+• Social Sharing & Interaction (follow/unfollow users, in-app activity feed)
+Version 1.1 - Community & Discovery Enhancements
+Enhance social connectivity and content discovery based on MVP user feedback, introducing more
+dynamic features for interaction and exploration.
+Features Included
+• Enhanced User Profile (more customization options, e.g., favorite genres)
+• Advanced Search Filters (by date, genre, location)
+• Curated Explore Content (editor's picks, location-based trends)
+• Direct Messaging (one-to-one messaging between users)
+• External Social Sharing Integrations (direct share to Instagram, Twitter)
+Version 1.2 - Personalization & Event Management
+Introduce intelligent personalization, event planning tools, and richer media experiences to deepen user
+engagement and utility.
+Features Included
+• Personalized Recommendations (based on logged concerts, followed artists/genres)
+• Upcoming Concert Reminders (notifications for saved events)
+• Ticket Integration (view external links to purchase tickets for upcoming shows)
+• Photo/Video Uploads for Logs (attach media to concert entries)
+7. Non-Goals / Out of Scope
+• Direct ticket purchasing functionality within the app (will link out to third-party providers).
+• Live streaming of concerts or music playback integration (e.g., full Spotify song playback).
+• Detailed analytics dashboards or promotional tools for artists and venues.
+• Comprehensive offline mode for all content and functionality beyond basic cached data.
+• Complex gamification elements like badges, leaderboards, or achievement systems beyond
+foundational social metrics for the MVP.
+8. Design & UX Requirements
+UX Principles
+• Simplicity: Ensure core actions like logging a concert or writing a review are intuitive and require
+minimal steps.
+• Consistency: Maintain a uniform visual language and interaction patterns across all screens and
+components.
+• Discoverability: Make content (artists, concerts, reviews, friends) easily findable through intuitive
+navigation and search.
+• Feedback: Provide clear and immediate visual or haptic feedback for user actions and system states
+(e.g., loading, success, error).
+• Accessibility: Design for inclusivity, ensuring the app is usable by individuals with diverse abilities,
+adhering to recognized standards.
+Accessibility
+WCAG 2.1 AA (Web Content Accessibility Guidelines) standards, ensuring all interactive elements are
+reachable, text has sufficient contrast, and content is understandable for users with disabilities, as
+applicable to mobile applications.
+9. Security Requirements
+Authentication: Users will authenticate via Firebase Authentication, supporting email/password, Google,
+and Apple sign-in for convenience and robust security.
+Data Encryption: All data at rest within Firestore will be encrypted using AES-256. All data in transit
+between the client and Firebase services, and external APIs, will be secured using TLS 1.3.
+Compliance: GDPR (General Data Protection Regulation) for handling personal data of users in the
+European Union., CCPA (California Consumer Privacy Act) for protecting personal information of
+California residents., OWASP Top 10 guidelines will be followed during application development to
+mitigate common web application security risks.
+10. Performance & Scalability Requirements
+Page Load Time: Key screens (e.g., Home Feed, Concert Detail, User Profile) must load and become
+interactive within < 2 seconds on a standard 4G mobile connection.
+API Response Time: P95 (95th percentile) latency for critical API calls (e.g., fetching feed data,
+submitting a review) must be < 200ms.
+Concurrent Users: The system must be capable of supporting 5,000 concurrent active users without any
+noticeable degradation in performance, with architecture designed for scalability to 50,000+.
+11. Assumptions
+• Reliable and consistent availability of third-party APIs (Ticketmaster, MusicBrainz, Google Places) for
+concert, artist, and venue data.
+• Users will have stable internet connectivity for core app functionality; limited offline capabilities are
+considered a non-goal for MVP.
+• User-generated content (reviews, comments) will require effective moderation, either through a
+combination of automated tools and manual review processes.
+• The initial user base will be receptive to community-driven content and social interaction features,
+providing valuable early feedback.
+• The chosen technology stack (React Native, Firebase) can adequately scale to meet projected user
+growth and performance demands without significant architectural re-platforming in the short term.
+12. Dependencies
+• External API providers: Ticketmaster, MusicBrainz/Spotify, Google Places for event and metadata
+services.
+• Firebase platform services and their underlying Google Cloud Platform infrastructure.
+• Third-party content moderation services or internal tools/processes for user-generated content.
+• Marketing and Growth team for user acquisition and community building post-launch.
+• Legal and Compliance team for review of privacy policies, terms of service, and data handling
+agreements.
+13. Engineering Workflow
+Technical Design Document
+Start with a high-level proposal outlining the problem, goals, and proposed architecture.
+• - Problem Statement: Existing solutions for concert tracking and social music sharing are fragmented
+and lack a dedicated community focus for live music experiences. Harmony Hub aims to solve this by
+providing a unified platform for logging, reviewing, and sharing live music experiences, fostering a
+social community around music and concerts.- Goals & Non-Goals: Defined in the Product
+Requirements Document (PRD), focusing on user profiles, concert logging, review/comment systems,
+exploration, and social interaction, while explicitly excluding direct ticket sales or music playback
+functionality for the initial release.- Proposed Architecture: A cross-platform mobile application built
+with React Native and Expo for the frontend, leveraging Firebase services (Firestore for database,
+Cloud Functions for backend logic, Authentication for user management, and Storage for media) for a
+scalable and real-time backend. External APIs will be integrated for comprehensive data.- API Design:
+Standard RESTful API endpoints will be exposed via Firebase Cloud Functions for user authentication,
+profile management, concert logging and retrieval, review submission and display, and social
+following/feed generation. Data will be exchanged primarily via JSON payloads.- Data Model: Core
+entities will include Users, Concerts, Artists, Venues, Reviews, Ratings, Comments, and Follower
+relationships. Each entity will have a dedicated Firestore collection, with document references used to
+link related data (e.g., a concert referencing an artist and venue).- Integration Points: Key third-party
+integrations include the Ticketmaster API for concert event data, the MusicBrainz/Spotify API for artist
+and music metadata, and the Google Places API for detailed venue information and location services.
+Design Review
+Prepare key questions and potential weak points for a senior engineering review.
+• - How will the Firestore data model, particularly for collections like 'concerts', 'reviews', and 'feeds',
+scale efficiently to millions of documents and reads/writes without incurring excessive costs or
+performance bottlenecks?
+• - What specific strategies will be implemented to handle rate limits and potential downtime from
+external APIs (Ticketmaster, MusicBrainz, Google Places), ensuring a resilient user experience?
+• - What is the comprehensive plan for user-generated content moderation (reviews, comments, profile
+pictures) to prevent spam, abuse, or inappropriate content, and how will it be integrated into the
+workflow?
+• - How will offline capabilities be managed for critical user actions, such as logging a concert or
+writing a review, especially if network connectivity is intermittent?
+• - What are the security implications of storing sensitive user data (even if encrypted) in Firestore, and
+how will Firebase Security Rules be meticulously crafted to prevent unauthorized access and data
+manipulation?
+• - How will Firebase Cloud Functions' cold start issues be mitigated for frequently accessed
+endpoints, and what is the strategy for optimizing their performance for a global user base?
+• - What is the versioning strategy for our internal APIs (Cloud Functions) and database schema
+migrations to ensure backward compatibility and smooth updates?
+• - How will data consistency be maintained across different collections and external API sources,
+especially if data becomes stale or conflicting (e.g., artist names from MusicBrainz vs. Ticketmaster)?
+• - What are the proposed disaster recovery and backup strategies for our Firestore data, and how will
+we ensure business continuity in case of a major outage?
+• - How will the application handle high concurrency for actions like 'liking' a review or 'following' a
+user, preventing race conditions and ensuring atomic updates?
+Subsystem Documentation
+Break down the main system into smaller, documentable subsystems for individual teams.
+• - User Authentication & Profile Management: Responsible for handling all aspects of user sign-up,
+login, session management, and the storage/retrieval of user profile data.- Concert & Event Data
+Management: Oversees the ingestion, storage, and retrieval of concert events, artist information, and
+venue details, including interactions with external event APIs.- Review & Rating System: Manages the
+creation, storage, retrieval, aggregation, and display of user-submitted concert reviews and star
+ratings, along with comment functionality.- Social Graph & Feed Service: Manages user
+follow/unfollow relationships and generates personalized activity feeds based on the actions of
+followed users.- Search & Discovery Engine: Provides robust full-text search capabilities across
+artists, venues, and concerts, and powers the 'Explore' section with trending content and
+recommendations.- Notification Service: Handles in-app notifications related to social interactions
+(likes, comments, new followers) and potentially concert alerts.- Media Upload & Storage: Manages
+the secure upload, processing, and storage of user-generated media such as profile pictures or
+concert photos.
+Backlog & Sprint Planning
+Generate a list of discrete user stories or tasks for the development backlog.
+• - As a new user, I want to sign up for an account using my email and a secure password, so that I
+can start using Harmony Hub.- As a registered user, I want to log in to my account, so that I can
+access my personalized concert data and community features.- As a user, I want to edit my profile
+details, including my display name, bio, and profile picture, so that I can personalize my presence in
+the app.- As a concert-goer, I want to search for a specific artist or venue, so that I can find concerts
+relevant to them.- As a concert-goer, I want to log a concert I attended with the artist, venue, date, and
+a star rating, so that I can keep a personal record.- As a concert-goer, I want to write a detailed text
+review for a logged concert, so that I can share my experiences with others.- As a user, I want to read
+all reviews for a specific concert, so that I can get different perspectives on the event.- As a user, I
+want to post a comment on another user's review, so that I can engage in discussions about concerts.-
+As a user, I want to 'like' a review, so that I can show appreciation for valuable content.- As a user, I
+want to follow another user, so that I can see their activities in my feed.- As a user, I want to see an
+activity feed showing concert logs and reviews from users I follow, so that I stay updated on their
+experiences.- Technical Task: Implement Firebase Authentication for email/password and social login
+providers.- Technical Task: Design and implement Firestore collections and data models for Users,
+Concerts, Artists, Venues, Reviews, and Comments.- Technical Task: Integrate with the Ticketmaster
+API to fetch concert event data based on user search queries.- Technical Task: Develop React Native
+components for the user profile screen, displaying user data and logged concerts.- Technical Task:
+Develop React Native components for the concert logging form, including star rating input.- Technical
+Task: Set up Firebase Cloud Functions to handle server-side logic, such as proxying API requests and
+managing atomic updates for likes/comments.
+Test-Driven Development
+Write the tests first. Outline key test cases for the feature before writing implementation code.
+• - Unit Test: Verify the `signUp` function in `AuthService` correctly creates a user in Firebase Auth and
+a corresponding document in Firestore with valid credentials.- Unit Test: Ensure the `logConcert`
+function correctly saves a new concert document to Firestore, including all required fields and
+references.- Unit Test: Confirm the `submitReview` function properly associates a review with a
+concert and user, and correctly handles character limits.- Unit Test: Validate the `likeReview` function
+atomically increments the `likesCount` on a review document using a Firebase Cloud Function.-
+Integration Test: Verify that after a user logs in, navigating to their profile correctly fetches and displays
+their user details and a list of their previously logged concerts.- Integration Test: Test the end-to-end
+flow of searching for an artist, selecting an upcoming concert, and successfully logging it with a rating
+and review.- Integration Test: Validate that posting a comment on a review updates the
+`commentsCount` on the parent review and the new comment is immediately visible to other users.-
+End-to-End Test: Simulate a user registering, logging a concert, writing a review, following another
+user, and then verifying that the followed user's feed displays the new activity.- End-to-End Test:
+Ensure an unauthenticated user can browse the 'Explore' section and perform searches without
+encountering authentication barriers or data access issues.- End-to-End Test: Verify that updating a
+user's profile picture is correctly reflected across all instances where the picture is displayed (e.g.,
+profile, reviews, comments).- API Test: Confirm that the Firebase Cloud Function acting as a proxy to
+the Ticketmaster API correctly fetches concert data and transforms it into the expected internal data
+structure.
+Code Submission Review
+Create a checklist for code reviewers to ensure quality, consistency, and correctness.
+• - Does the submitted code adhere to the established React Native, Firebase, and general
+JavaScript/TypeScript coding standards and best practices (e.g., ESLint, Prettier)?
+• - Are all new features and bug fixes adequately covered by comprehensive unit, integration, and,
+where appropriate, end-to-end tests?
+• - Is the data model interaction consistent with the defined Firestore schema, and are efficient queries
+and atomic operations (transactions, batch writes) utilized to minimize reads/writes?
+• - Has user input been properly sanitized and validated on both the client and server (Firebase Cloud
+Functions) to prevent security vulnerabilities such as XSS, injection attacks, or malformed data?
+• - Are error handling mechanisms robust, providing clear feedback to the user and logging detailed
+information for developers without exposing sensitive data?
+• - Has performance been explicitly considered, particularly regarding Firestore query optimizations
+(indexing, pagination), efficient API calls, and React Native component rendering?
+• - Is the UI implementation consistent with the approved design specifications and UX principles (e.g.,
+accessibility, responsiveness, visual hierarchy)?
+• - Are all sensitive operations (e.g., authentication, data modification, API key usage) protected by
+appropriate authorization checks and Firebase Security Rules?
+• - Is the code adequately documented with clear comments, especially for complex logic, and are
+there any necessary updates to existing documentation (e.g., README, architectural diagrams)?
+• - Does the feature gracefully handle various edge cases, including empty states, network
+disconnections, concurrent user actions, and invalid/missing data from external APIs?
+Staging & Production Push
+Outline the final verification steps to be performed in the staging environment before production.
+• - Verify all new features are fully functional and meet all acceptance criteria in the staging
+environment, including cross-device and platform compatibility (iOS/Android).- Conduct a
+comprehensive end-to-end smoke test of all critical user flows: user registration/login, concert logging,
+review submission, social following, and feed loading.- Perform targeted performance and load tests
+on the staging environment to ensure the application scales as expected under anticipated user traffic,
+measuring response times and resource utilization.- Confirm all third-party API integrations
+(Ticketmaster, MusicBrainz, Google Places) are correctly configured with production keys and are
+fetching data accurately and reliably.- Review and confirm that Firebase Security Rules for Firestore
+and Storage are correctly applied and effectively restrict unauthorized data access and operations.-
+Verify that all analytics (Firebase Analytics) and error logging (Crashlytics, monitoring tools) are
+correctly integrated, capturing data, and reporting without issues.- Test push notifications (if applicable
+for the current release) for delivery, content accuracy, and deep-linking functionality.- Ensure that all
+environment variables, API keys, and configuration settings are correctly set for the production
+environment and are securely stored.- Execute a final database integrity check on staging data (if
+mirrored from production) to catch any potential data migration or schema issues.- Clearly define and
+communicate the rollback plan in case of critical production issues post-deployment, outlining steps to
+revert to the previous stable application version and database state.
+14. Build Phase Guide
+Phase 1: Phase 1: Project Setup & Core Authentication
+Description: Initialize the React Native project with Expo, set up Firebase services, and implement the
+fundamental user authentication (sign-up, login, logout) to establish a secure user base.
+LLM Prompt:
+As an expert React Native and Firebase developer, your task is to initialize a new React
+Native project using Expo and configure Firebase for authentication. Tech Stack: Frontend:
+React Native with Expo. Backend: Firebase Authentication, Firestore. Features to implement:
+User Sign-Up (Email/Password), User Log-In (Email/Password), Basic User Profile Creation upon
+sign-up (Firestore document with UID, email, displayName), and User Log-Out. Requirements: 1.
+Initialize a new Expo project with a clean structure. 2. Integrate Firebase SDK by adding
+necessary dependencies and configuration. 3. Implement `AuthContext` or a similar global state
+management solution to manage the authentication state across the application. 4. Create two
+distinct screens: `SignUpScreen.js` for new user registration and `LoginScreen.js` for
+existing user authentication. 5. For sign-up, ensure password inputs are handled securely
+(Firebase handles hashing). Upon successful sign-up, automatically create a corresponding user
+document in Firestore under a 'users' collection with the `uid`, `email`, and a default
+`displayName` (e.g., derived from email prefix, or prompting for one if possible within the
+flow). 6. Implement user logout functionality. 7. Design a basic navigation flow: unauthorized
+users should only see the login/signup screens. Authenticated users should be redirected to a
+placeholder `HomeScreen` that displays their display name and a logout button. Provide the
+full code for project setup, Firebase configuration (use placeholder for API keys like
+`YOUR_API_KEY`), authentication functions (signUp, signIn, signOut), the `AuthContext`
+implementation, and the `SignUpScreen`, `LoginScreen`, and basic `HomeScreen` components.
+Phase 2: Phase 2: Data Model & Basic Concert Logging
+Description: Design the Firestore data models for all core entities (Concerts, Artists, Venues, Reviews)
+and develop the user interface and backend logic for logging new concerts.
+LLM Prompt:
+As an expert React Native and Firebase developer, your task is to design the Firestore data
+models and implement the basic concert logging functionality for the Harmony Hub app. Tech
+Stack: Frontend: React Native with Expo. Backend: Firestore. Features to implement: 1. Define
+comprehensive Firestore Data Models for `users`, `artists`, `venues`, `concerts`, and
+`reviews` collections. 2. Implement a 'Log Concert' form UI and associated backend logic to
+allow users to submit new concert entries. Data Model Specifications: - `users` collection
+(already started in Phase 1): `{ uid: string, email: string, displayName: string, bio: string
+(optional), profilePictureUrl: string (optional), loggedConcertsCount: number (initial 0) }` -
+`artists` collection: `{ id: string (auto-generated by Firestore), name: string, genre:
+array<string> (optional), imageUrl: string (optional), createdAt: Timestamp }` - `venues`
+collection: `{ id: string (auto-generated by Firestore), name: string, city: string, state:
+string, country: string, address: string (optional), imageUrl: string (optional), createdAt:
+Timestamp }` - `concerts` collection: `{ id: string (auto-generated by Firestore), artistRef:
+DocumentReference<Artist> (to 'artists' collection), venueRef: DocumentReference<Venue> (to
+'venues' collection), date: Timestamp, userRef: DocumentReference<User> (to 'users'
+collection, current user), rating: number (1-5), notes: string (optional), createdAt:
+Timestamp, updatedAt: Timestamp }` - `reviews` collection (will be used more in Phase 4 but
+define now): `{ id: string (auto-generated by Firestore), concertRef:
+DocumentReference<Concert>, userRef: DocumentReference<User>, text: string, rating: number
+(1-5, matching concert's rating for this user), createdAt: Timestamp, updatedAt: Timestamp,
+likesCount: number (initial 0), commentsCount: number (initial 0) }` Concert Logging Form
+Requirements: 1. Create a dedicated `LogConcertScreen.js` component accessible from the
+`HomeScreen`. 2. The form should include input fields for: 'Artist Name', 'Venue Name', 'Date'
+(using a date picker component), 'Rating' (using a 1-5 star picker component), and 'Personal
+Notes' (multiline text input). 3. Users should be able to search for existing artists/venues
+(placeholder functionality, for now, assume manual entry or simple check). If an artist/venue
+with the exact name doesn't exist, create a new document in the respective `artists` or
+`venues` collection. If it exists, use its `DocumentReference`. 4. Upon form submission,
+create a new document in the `concerts` collection. 5. The new concert document must be
+associated with the currently authenticated user (`userRef`). 6. Implement basic validation
+and error handling for form submission (e.g., mandatory fields are filled). 7. After
+successful logging, navigate back to the `HomeScreen` or `UserProfileScreen` (from Phase 3).
+Provide the Firestore schema definitions (as comments or JSON objects for reference) and the
+full React Native code for the `LogConcertScreen` component, including UI, form state
+management, and all Firebase Firestore interaction logic for adding/retrieving artists,
+venues, and concerts.
+Phase 3: Phase 3: Display User Profile & Logged Concerts
+Description: Develop the user profile screen to display personal information, a summary of their activity,
+and a chronological list of all concerts they have logged.
+LLM Prompt:
+As an expert React Native and Firebase developer, your task is to implement the User Profile
+screen (`UserProfileScreen.js`) to display personal information and a list of logged concerts.
+Tech Stack: Frontend: React Native with Expo. Backend: Firestore. Features to implement: 1.
+Display the current authenticated user's profile details. 2. Display a chronological list of
+all concerts logged by the current user. Requirements: 1. Create the `UserProfileScreen.js`
+component. This screen should be accessible from the `HomeScreen` navigation. 2. Fetch the
+current authenticated user's profile data (`displayName`, `email`, `bio`, `profilePictureUrl`)
+from the `users` collection in Firestore based on their UID. Display this information
+prominently. 3. Fetch all `concerts` documents from Firestore where the `userRef` field
+matches the current user's UID. 4. For each logged concert, display its details in a clean,
+scrollable list. The details should include: the concert's main artist(s) name, venue name,
+date (formatted for readability), and the user's star rating for that concert. Note: You will
+need to fetch the `artist` and `venue` details using their `DocumentReference` fields in the
+`concerts` collection. Implement a mechanism to load these referenced documents. 5. Include a
+loading indicator while the user profile and concert data are being fetched. 6. Implement
+error handling for data fetching failures (e.g., display a user-friendly message if data
+cannot be loaded). 7. Each logged concert item in the list should be tappable, leading to a
+placeholder `ConcertDetailScreen.js` (pass the concert ID as a parameter). Provide the full
+React Native code for the `UserProfileScreen` component, including data fetching from
+Firestore, resolving `DocumentReference` fields for artists and venues, and displaying the
+information in a user-friendly format.
+Phase 4: Phase 4: Review and Comment System
+Description: Develop the user interface and backend logic for users to write detailed text reviews for
+concerts and interact with existing reviews through likes and comments.
+LLM Prompt:
+As an expert React Native and Firebase developer, your task is to implement the review and
+comment system for Harmony Hub. Tech Stack: Frontend: React Native with Expo. Backend:
+Firestore, Firebase Cloud Functions (for atomic updates). Features to implement: 1. User can
+submit detailed text reviews for specific concerts. 2. Display all reviews for a chosen
+concert on its detail page. 3. Users can 'like' reviews. 4. Users can comment on existing
+reviews. Requirements: 1. Enhance the `ConcertDetailScreen.js` (from Phase 3 placeholder) to
+display the concert's details and include a dedicated section for user reviews. 2. On
+`ConcertDetailScreen`, implement a form allowing the current user to submit a new review. This
+form should have a text input for the review content. The review should be automatically
+associated with the `concertRef` of the current concert and the `userRef` of the authenticated
+user. The `rating` for the review should be copied from the user's initial rating when they
+logged the concert. 3. Display each review clearly, showing the reviewer's `displayName`
+(fetch from `userRef`), `rating`, `text`, `createdAt` timestamp, `likesCount`, and
+`commentsCount`. 4. Implement a 'Like' button for each review. When a user clicks 'Like',
+increment the `likesCount` on the `reviews` document. This operation *must* be atomic to
+prevent race conditions. Implement a Firebase Cloud Function (callable function) `likeReview`
+that takes `reviewId` and `userId` and safely increments the `likesCount` and records the
+user's like (e.g., in a `likedBy` subcollection or an array field to prevent duplicate likes
+from the same user). 5. Implement a 'Comment' section or button for each review. When clicked,
+allow users to type and submit a comment. Comments should be stored in a `comments`
+subcollection directly under the respective `review` document (e.g.,
+`/reviews/{reviewId}/comments/{commentId}`). Each comment should include `userRef`, `text`,
+and `createdAt`. Increment the `commentsCount` on the parent `reviews` document using another
+Firebase Cloud Function (callable function) `addComment`. 6. Display the comments
+chronologically beneath each review. Provide the full React Native code for the
+`ConcertDetailScreen` (focusing on the review and comment sections), the necessary Firestore
+logic for submitting and fetching reviews/comments, and the Firebase Cloud Function code for
+`likeReview` and `addComment` to ensure atomic updates and proper data structure.
+Phase 5: Phase 5: Explore & Search Functionality, Social Feed
+Description: Build the 'Explore' screen with global search capabilities and curated content, and develop
+the personalized social feed displaying activities from followed users, integrating third-party APIs.
+LLM Prompt:
+As an expert React Native and Firebase developer, your task is to implement the 'Explore'
+screen with global search and trending content, and the social 'Feed' displaying activities
+from followed users. Tech Stack: Frontend: React Native with Expo. Backend: Firestore,
+Firebase Cloud Functions (for API proxies). Third-Party APIs: Ticketmaster API (for concert
+data), MusicBrainz API (for artist data), Google Places API (for venue data). Features to
+implement: 1. Global Search: Users can search for artists, venues, and concerts. 2. Explore
+Section: Display trending concerts, popular artists/venues. 3. Following System: Users can
+follow/unfollow other users. 4. Activity Feed: Display a chronological feed of activities (new
+concert logs, new reviews) from followed users. Requirements: 1. Create an `ExploreScreen.js`
+accessible via a tab navigator. This screen should feature a prominent search bar. 2.
+Implement the search functionality: When a user types into the search bar, query Firestore for
+matching artists, venues, and concerts. Additionally, use Firebase Cloud Functions as secure
+proxies to call `Ticketmaster API` for upcoming events, `MusicBrainz API` for artist
+bios/images, and `Google Places API` for detailed venue information. The Cloud Functions
+should handle API key security and data transformation. Display aggregated search results. 3.
+Populate the 'Explore' section below the search bar with simple 'Trending Concerts' (e.g., top
+5 most recently logged concerts by any user) and 'Popular Artists' (e.g., top 5 artists with
+highest average ratings from logged concerts). These can be simple Firestore queries. 4.
+Implement follow/unfollow functionality. On a user's `UserProfileScreen`, add
+'Follow'/'Unfollow' buttons. When a user follows another, create a document in a `following`
+subcollection under the current user's document (e.g.,
+`/users/{currentUserId}/following/{followedUserId}`). When unfollowing, delete this document.
+5. Create a `FeedScreen.js` accessible via a tab navigator. This screen should fetch and
+display recent activities (new concert logs, new reviews) from users that the current user
+`follows`. This will require a Firestore query that retrieves activities from multiple users.
+Consider denormalization (e.g., a 'feedItems' collection) for scalability if direct querying
+of multiple `userRefs` becomes complex or inefficient (for this phase, a straightforward
+approach is acceptable, even if it involves multiple queries). 6. Display each feed item with
+clear context, e.g., 'User A logged Concert B', 'User C reviewed Concert D'. Provide the full
+React Native code for `ExploreScreen` and `FeedScreen`, including search input, display logic,
+Firestore queries for following and feed generation, and example Firebase Cloud Functions that
+proxy requests to external APIs (use placeholder API keys). Ensure proper error handling for
+API calls.
+Phase 6: Phase 6: Refinements, Error Handling & Production Readiness
+Description: Focus on improving the overall user experience, implementing robust error handling,
+optimizing performance, and preparing the application for a stable production release.
+LLM Prompt:
+As an expert React Native and Firebase developer, your task is to refine the Harmony Hub
+application, implement comprehensive error handling, optimize performance, and ensure
+production readiness. Tech Stack: Frontend: React Native with Expo. Backend: Firebase
+(Firestore, Functions, Auth, Storage). Tasks: 1. UI/UX Refinements: Conduct a thorough review
+of all existing screens (`Login`, `SignUp`, `Home`, `Profile`, `ConcertLog`, `ConcertDetail`,
+`Explore`, `Feed`) for consistency in design, responsiveness across different device sizes,
+and overall aesthetic appeal. Apply a consistent visual theme (colors, typography, spacing)
+throughout the application. 2. Global Error Handling: Implement a centralized error handling
+mechanism for React Native components (e.g., using React Error Boundaries) and a consistent
+way to display user-friendly error messages (e.g., toast notifications or a persistent banner)
+for network issues, API failures, and unexpected application errors. 3. Performance
+Optimization: Implement various strategies to improve application performance. This includes:
+- Lazy loading of images (e.g., for profile pictures, artist/venue images). - Optimizing
+Firestore queries: Ensure proper indexing, use `limit` and `startAfter` for pagination in
+feeds and lists, and minimize unnecessary reads. - Debouncing search inputs to reduce frequent
+API calls and Firestore queries. - Optimize React Native component rendering to prevent
+re-renders. 4. Empty States: Design and implement user-friendly empty states for all lists and
+sections where content might be absent (e.g., 'No concerts logged yet', 'No reviews for this
+concert', 'Your feed is empty – follow some users!'). 5. Loading States: Implement clear and
+consistent loading indicators (e.g., spinners, skeleton loaders) for all asynchronous
+operations, ensuring users understand when data is being fetched or an action is in progress.
+6. Security Hardening: Conduct a comprehensive review of all Firebase Security Rules for
+Firestore and Storage. Ensure they are robust, granular, and prevent any unauthorized
+read/write access to user data, concert data, or media. Provide examples of improved rules. 7.
+Analytics Integration: Integrate Firebase Analytics to track key user events and understand
+user behavior. Implement tracking for: `login`, `sign_up`, `concert_logged`, `review_posted`,
+`review_liked`, `comment_posted`, `user_followed`, `search_performed`, `explore_viewed`. 8.
+Environment Configuration: Set up `.env` files or a similar mechanism to manage different
+environment variables (e.g., Firebase config, API keys) for development, staging, and
+production environments securely. Provide code snippets and best practices for implementing
+global error handling, specific React Native/Firestore performance optimizations, examples of
+robust Firebase Security Rules for the defined data models, and a plan for Firebase Analytics
+integration including event definitions. Focus on making the app stable, performant, and ready
+for deployment.

@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users collection - users can read/write their own data
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      allow read: if request.auth != null; // Allow reading other users for profiles/following
+    }
+
+    // Artists collection - public read, authenticated write
+    match /artists/{artistId} {
+      allow read: if true; // Public read access
+      allow write: if request.auth != null;
+    }
+
+    // Venues collection - public read, authenticated write
+    match /venues/{venueId} {
+      allow read: if true; // Public read access
+      allow write: if request.auth != null;
+    }
+
+    // Concerts collection - public read, only owner can write
+    match /concerts/{concertId} {
+      allow read: if true; // Public read access for concert details
+      allow write: if request.auth != null && request.auth.uid == resource.data.userRef.id;
+      allow create: if request.auth != null;
+    }
+
+    // Reviews collection - public read, only owner can write
+    match /reviews/{reviewId} {
+      allow read: if true; // Public read access
+      allow write: if request.auth != null && request.auth.uid == resource.data.userRef.id;
+      allow create: if request.auth != null;
+    }
+
+    // Comments subcollection under reviews
+    match /reviews/{reviewId}/comments/{commentId} {
+      allow read: if true; // Public read access
+      allow write: if request.auth != null && request.auth.uid == resource.data.userRef.id;
+      allow create: if request.auth != null;
+    }
+
+    // Following subcollection under users
+    match /users/{userId}/following/{followedUserId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Followers subcollection under users
+    match /users/{userId}/followers/{followerUserId} {
+      allow read, write: if request.auth != null && (request.auth.uid == userId || request.auth.uid == followerUserId);
+    }
+
+    // Feed items collection (for denormalized feed data)
+    match /feedItems/{feedItemId} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only allow writes through Cloud Functions for security
+    }
+  }
+}

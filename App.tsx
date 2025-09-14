@@ -1,20 +1,34 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useFonts } from 'expo-font';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { AuthProvider } from './context/AuthContext';
+import AppNavigator from './navigation/AppNavigator';
+import ErrorBoundary, { setupGlobalErrorHandling } from './components/ErrorBoundary';
+import { ToastManager } from './components/Toast';
+
+// Setup global error handling
+setupGlobalErrorHandling();
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    // System fonts are loaded by default on both platforms
+    // Additional custom fonts can be added here if needed
+  });
+
+  if (!fontsLoaded) {
+    return null; // Or a loading screen
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <ErrorBoundary>
+        <AuthProvider>
+          <AppNavigator />
+          <ToastManager />
+          <StatusBar style="auto" />
+        </AuthProvider>
+      </ErrorBoundary>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
